@@ -38,7 +38,6 @@ export class TasksService {
   }
 
   createTask(createTaskDto: CreateTaskDto): Task {
-    console.log(createTaskDto);
     const newTask: Task = {
       id: v4(),
       title: createTaskDto.title,
